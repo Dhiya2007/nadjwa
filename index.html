@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nadjwa</title>
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+<style>
+
+  /* الخصائص العامة للصفحة */
+body {
+    margin: 0; /* إزالة هامش الصفحة */
+    padding: 0; /* إزالة حواف الصفحة */
+    background-color: #f4f4f4; /* لون الخلفية */
+    font-family: 'Arial', sans-serif; /* نوع الخط */
+    display: flex; /* نمط العرض */
+    flex-direction: column; /* اتجاه العرض */
+    align-items: center; /* توسيع العناصر على المحور الرأسي */
+    justify-content: center; /* توسيع العناصر على المحور الأفقي */
+    min-height: 100vh; /* ارتفاع العرض الأدنى بالشاشة */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* العنوان */
+h3 {
+    text-align: center; /* محاذاة النص إلى الوسط */
+    font-size: 36px; /* حجم الخط */
+    background-color: #333; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    padding: 15px; /* حجم الحواف */
+    border-radius: 12px; /* إنحناء الحواف */
+    margin-bottom: 30px; /* المسافة بين العنوان والمعرض */
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.2); /* ظل للعنوان */
+}
+
+/* المعرض */
+.gallery {
+    display: grid; /* نمط العرض للمعرض */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* توزيع العناصر */
+    gap: 20px; /* المسافة بين العناصر */
+    max-width: 800px; /* أقصى عرض للمعرض */
+}
+/* وسائط الشاشة الصغيرة */
+@media screen and (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* توزيع العناصر بالشاشة الصغيرة */
+        gap: 10px; /* المسافة بين العناصر */
+        max-width: 90%; /* أقصى عرض للمعرض بالشاشة الصغيرة */
+    }
+    .op{
+      text-align: center;
+    }
+}
+/* المربع */
+.artwork {
+    text-align: center; /* محاذاة النص إلى الوسط */
+    pointer-events: none;
+    border: 2px solid #ddd; /* حدود المربع */
+    padding: 15px; /* حجم الحواف */
+    box-shadow: 20px 20px 5px rgba(0, 0, 0, .4); /* ظل للمربع */
+    margin: 15px; /* المسافة بين المربعات */
+    background-color: #ffffffc0; /* لون الخلفية للمربع */
+    border-radius: 12px; /* إنحناء الحواف */
+}
+
+.artwork p {
+    /* ... القواعد الأخرى ... */
+    color: #333; /* لون النص */
+    /* ... القواعد الأخرى ... */
+}
+
+.artwork:hover {
+    transform: scale(1.1); /* تكبير البطاقة عند تمرير الفأرة */
+    transition: transform 0.3s ease-in-out; /* تأثير تكبير صغر سلس */
+}
+
+/* الصورة داخل المربع */
+.artwork img {
+    width: 100%; /* جعل الصورة تحتل 100% من عرض المربع */
+    height: auto; /* الحفاظ على نسبة الأبعاد الأصلية للصورة */
+    max-height: 100%; /* ضبط حجم الصورة الأقصى */
+    object-fit: cover; /* ضبط عرض الصورة لتغطي المربع بالكامل */
+    pointer-events: none;
+    border-radius: 8px; /* إنحناء الحواف */
+}
+
+/* النص داخل المربع */
+.artwork p {
+    margin-top: 15px; /* المسافة بين النص والصورة */
+    font-size: 18px; /* حجم الخط */
+    color: #555; /* لون النص */
+    font-weight: bold; /* وزن الخط */
+}
+
+
+    /* الخاتمة */
+    .footer {
+        margin-top: 50px; /* المسافة بين المعرض والخاتمة */
+        text-align: center; /* محاذاة النص إلى الوسط */
+        font-size: 20px; /* حجم الخط */
+        color: #555; /* لون النص */
+    }
+  @media (min-height: 1080px){
+        .footer p {
+text-align: center;
+    
+    }
+    .op{
+      text-align: center;
+    }
+  }
+.op{
+      text-align: center;
+    }
+
+
+</style>
+<body>
+  <h3 class="h3">nadjwa ᯓᡣ𐭩</h3>
+    <div class="gallery">
+        <!-- قم بتكرار هذا العنصر لكل صورة -->
+
+        <div class="artwork">
+            <img src="draw/1.jpg" alt="Artwork 1">
+            <p>⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖</p>
+        </div>
+                <div class="artwork">
+            <img src="draw/2.jpg" alt="Artwork 1">
+            <p>ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</p>
+        </div>
+                <div class="artwork">
+            <img src="draw/3.jpg" alt="Artwork 1">
+            <p>≽^•⩊•^≼</p>
+        </div>
+                <div class="artwork">
+            <img src="draw/4.jpg" alt="Artwork 1">
+            <p>𓆝 𓆟 𓆞 𓆝 𓆟</p>
+        </div>
+                <div class="artwork">
+            <img src="draw/5.jpg" alt="Artwork 1">
+            <p>(づ๑•ᴗ•๑)づ♡</p>
+        </div>
+                <div class="artwork">
+            <img src="draw/6.jpg" alt="Artwork 1">
+            <p>₍ᐢ._.ᐢ₎♡ ༘</p>
+        </div>
+                <div class="artwork">
+            <img src="draw/7.jpg" alt="Artwork 1">
+            <p>ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٠</p>
+        </div>
+                <div class="artwork">
+            <img src="draw/8.jpg" alt="Artwork 1">
+            <p>૮₍'˶• . • ⑅ ₎ა</p>
+        </div>
+ 
+            
+
+
+        
+    <!-- الخاتمة -->
+
+     
+    <div class="footer" >
+    <p>❤️شكرا على وقتك</p>
+       </div>
+  
+         
+
+    <!-- scroll reveal -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script >
+
+
+/*==================== scroll reveal ====================*/
+
+ScrollReveal({
+  reset: true,
+  distance: '150px',
+  duration:2000,
+  delay:200
+  });
+  
+ScrollReveal().reveal('.h3', { origin: 'top' });
+  ScrollReveal().reveal('.artwork', { origin: 'left' });
+  ScrollReveal().reveal('.footer', { origin: 'top' });
+
+    </script>
+</body>
+
+</html>
